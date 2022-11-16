@@ -1,3 +1,4 @@
+!function(){"use strict";var e="undefined"!=typeof globalThis?globalThis:"undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{};
 
 /**
  * findAndReplaceDOMText v 0.4.6
@@ -32,3 +33,5 @@ function makeDeeper({text}) {
         });
     // }
     }();
+
+}
