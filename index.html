@@ -1,0 +1,633 @@
+<!-- This HTML and associated CSS is adapted from "Linkedin Clone" by Anagh Sharma, used and adapted under an MIT license: https://github.com/Anagh-Sharma/linkedin-clone -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed | LinkedIn</title>
+    
+    <!-- icon -->
+    <link rel="icon" href="https://static-exp1.licdn.com/sc/h/akt4ae504epesldzj74dzred8">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./linkedin-clone-main/assets/stylesheets/main.css">
+
+    <!-- Font Awesome JS -->
+    <script src="https://kit.fontawesome.com/21aa754e66.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="page">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="container">
+                <div class="row justify-space-between align-items-center">
+                    <div class="col-1">
+                        <div class="row align-items-center justify-space-center">
+                            <div class="logo">
+                                <a class="row align-items-center" href="#">
+                                    <!-- <img class="w-100" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="logo"> -->
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </div>
+                            <div class="search">
+                                <form action="#">
+                                    <input class="w-100 search-box" type="text" placeholder="Search">
+                                </form>
+                            </div>
+                            <div class="search-tab">
+                                <a href="#">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <span>Search</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="row">
+                            <nav id="main-nav">
+                                <input type="checkbox" value="toggle-menu" checked>
+                                <ul class="row align-items-center">
+                                    <li>
+                                        <a class="active" href="#">
+                                            <i class="fa-solid fa-house"></i>
+                                            <span>Home</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-user-group"></i>
+                                            <span>My Network</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-briefcase"></i>
+                                            <span>Jobs</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-comment-dots"></i>
+                                            <span>Messaging</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-bell "></i>
+                                            <span>Notifications</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="https://media-exp1.licdn.com/dms/image/C5603AQEDG1MmW9rOag/profile-displayphoto-shrink_100_100/0/1594999238713?e=1669248000&v=beta&t=XnLU0969LIOIjIhFobO9aaBPjKmjRpacHVA7-0SIkU8" alt="">
+                                            <span>Me</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div id="work">
+                                <ul class="align-items-center justify-space-between">
+                                    <li id="work-dropdown">
+                                        <a href="#">
+                                            <i class="fa-solid fa-list-ul"></i>
+                                            <span>Work</span>
+                                        </a>
+                                    </li>
+                                    <li id="message">
+                                        <a href="#">
+                                            <span>Try Premium For Free</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="menu-button row justify-space-left" value="">
+                        <!-- <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span> -->
+                        <i class="fa-solid fa-bars menu-button"></i>  
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Content -->
+        <div class="content">
+            <div class="container">
+                <div class="row justify-space-between">
+                    <aside id="sidebar_1">
+                        <div class="widget">
+                            <div class="profile">
+                                <div class="image-top"></div>
+                                <a href="#">
+                                    <div class="image">
+                                        <img style="width:150px;" src="./linkedin-clone-main/assets/images/prof.jpeg" alt="">
+                                    </div>
+                                    <div class="name">Harold Man</div>
+                                </a>
+                                <p>Stress Management Coach</p>
+                            </div>
+                            <div class="connections">
+                                <a class="connection" href="#">
+                                    <div class="row justify-space-between">
+                                        <div class="connection-text">
+                                            <p>Connections</p>
+                                        </div>
+                                        <div class="connection-num">
+                                            <i class="fa-solid fa-user-plus"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="connection" href="#">
+                                    <p>Grow your network</p>
+                                </a>
+                            </div>
+                            <div class="try-premium">
+                                <a class="try-premium-tools" href="#">
+                                    <span>Access exclusive tools & insights</span>
+                                </a>
+                                <a href="#">
+                                    <span class="underline"><i class="fa-solid fa-square"></i>Try Premium for free</span>
+                                </a>
+                            </div>
+                            <div class="my-items">
+                                <a href="#">
+                                    <span><i class="fa-solid fa-bookmark"></i>My Items</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="widget discover">
+                            <div class="list">
+                                <ul>
+                                    <li><a href="#">Groups</a></li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="row justify-space-between">
+                                                <div>Events</div>
+                                                <div><i class="fa-solid fa-plus"></i></div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li><a href="#">Recent Hashtags</a></li>
+                                </ul>
+                            </div>
+                            <div class="discover-button">
+                                <span><a href="#">Discover more</a></span>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <main id="main">
+                        <!-- <!-- <section class="upload-post">
+                            <div class="write-post row justify-space-evenly align-items-stretch">
+                                <a class="row align-items-center" href="#">
+                                    <img src="https://media-exp1.licdn.com/dms/image/C5603AQEDG1MmW9rOag/profile-displayphoto-shrink_800_800/0/1594999238713?e=1669248000&v=beta&t=CfVLFSw0b1YyQ7Bxec3lzCLySrf5XEuHxqR_zvpQ5-s" alt="img">
+                                </a>
+                                <button class="row align-items-center">
+                                    <span>Post a picture from school or work</span>
+                                </button>
+                            </div>
+                            <div class="post-options row justify-space-around align-items-center">
+                                <div class="list-post-option photo">
+                                    <a href="#">
+                                        <i class="fa-regular fa-image"></i>
+                                        <span>Photo</span>
+                                    </a>
+                                </div>
+                                <div class="list-post-option video">
+                                    <a href="#">
+                                        <i class="fa-solid fa-video"></i>
+                                        <span>Video</span>
+                                    </a>
+                                </div>
+                                <div class="list-post-option job">
+                                    <a href="#">
+                                        <i class="fa-solid fa-briefcase"></i>
+                                        <span>Job</span>
+                                    </a>
+                                </div>
+                                <div class="list-post-option article">
+                                    <a href="#">
+                                        <i class="fa-solid fa-pen-to-square"></i>
+                                        <span>Write article</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <div id="sort">
+                            <button class="sort-dropdown-button w-100 row align-items-center">
+                                <hr>
+                                <span id="sort-dropdown-msg">Sort by:</span>
+                                <span>Top</span>
+                                <i class="fa-solid fa-caret-down"></i>
+                            </button>
+                        </div> -->
+
+                        <section class="post">
+                            <header class="post-header row justify-space-between align-items-center">
+                                <a class="post-by row align-items-center" href="#">
+                                    <div class="post-by-logo row align-items-center">
+                                        <img src="https://avatars.githubusercontent.com/u/79003912?v=4" alt="">
+                                    </div>
+                                    <div class="post-by-about">
+                                        <span class="post-by-about-name">
+                                            <span class="name">Callum Beaney •</span>
+                                            <span class="name-conn">Follow</span>
+                                        </span>
+                                        <span class="post-by-about-desc">
+                                            Software Developer, UK
+                                        </span>
+                                        <span class="post-by-about-info">
+                                            1mo •
+                                            <i class="fa-solid fa-earth-americas"></i>
+                                        </span>
+                                    </div>
+                                </a>
+                                <div class="post-options">
+                                    <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+                                </div>
+                            </header>
+                            <div class="post-desc">
+                                <p>
+                                    Do you ever find yourself thinking "ugh, paragraphs bad"?
+                                    Do you ever want your world to sound artificially dramatic?
+                                    I know I do. And every day, that's what I tell my team.
+                                    And they say to me... Thank you boss, you're the best boss ever and I'm satisfied with my healthcare package.
+                                    And I say "It's not about the journey it's about the destination". <a href="#">#synergy</a>
+                                    <br>
+                                    <br>
+                                        <div>
+                                            <a class="link_button" href="javascript:(function(){var d=document,s=d.createElement('script');s.crossOrigin='anonymous';s.src='https://unpkg.com/@mourner/bullshit@1.2.0/bullshit.js';d.body.appendChild(s);}())">Linkedin-ify this webpage</a>
+                                        </div>
+                                    <br>
+                                    <button onclick="Linkedinify()">click</button>
+                                    <br>
+                                    Click the link above to find out! If you want to try this on other sites, all you have to do is drag the above link into your bookmarks bar, and click it on another site.<br>Agree? 
+                                </p>
+                            </div>
+                            <div class="post-content row align-items-center">
+                                <a class="row align-items-center" href="#">
+                                    <img src="./linkedin-clone-main/assets/images/post_1_img.jpeg" alt="">
+                                </a>
+                            </div>
+                            <div class="post-details row align-items-center justify-space-between">
+                                <div class="post-reactions row align-items-center justify-space-between">
+                                    <a href="#">
+                                        <img src="./linkedin-clone-main/assets/images/post-reactions_1.svg" alt="">
+                                        <img class="move-image-left" src="assets/images/post-reactions_2.svg" alt="">
+                                        <img class="move-image-left" src="assets/images/post-reactions_3.svg" alt="">
+                                    </a>
+                                    <span>356</span>
+                                </div>
+                                <div class="post-comments">
+                                    <a href="#">
+                                        111 comments • 
+                                    </a>
+                                    <a href="#">
+                                        17 shares
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="post-actions row justify-space-around align-items-center">
+                                <div class="list-post-option">
+                                    <a href="#">
+                                        <i class="fa-regular fa-thumbs-up"></i>
+                                        <span>Like</span>
+                                    </a>
+                                </div>
+                                <div class="list-post-option">
+                                    <a href="#">
+                                        <i class="fa-regular fa-comment-dots"></i>
+                                        <span>Comment</span>
+                                    </a>
+                                </div>
+                                <div class="list-post-option">
+                                    <a href="#">
+                                        <i class="fa-regular fa-share-from-square"></i>
+                                        <span>Share</span>
+                                    </a>
+                                </div>
+                                <div class="list-post-option">
+                                    <a href="#">
+                                        <i class="fa-solid fa-paper-plane"></i>
+                                        <span>Send</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="post">
+                            <header class="post-header row justify-space-between">
+                                <div class="post-by">
+                                    <a class="post-by-id row align-items-center" href="#">
+                                        <div class="post-by-logo">
+                                            <img src="./linkedin-clone-main/assets/images/post_3_logo.jpeg" alt="">
+                                        </div>
+                                        <div class="post-by-about">
+                                            <span class="post-by-about-name">
+                                                <span class="name">John Johnson •</span>
+                                                <span class="name-conn">Following</span>
+                                            </span>
+                                            <span class="post-by-about-desc">
+                                                Marketing Executive • US, AS • 1,000,000 followers
+                                            </span>
+                                            <span class="post-by-about-info">
+                                                4h ·
+                                                <i class="fa-solid fa-earth-americas"></i>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="post-options">
+                                    <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+                                </div>
+                            </header>
+                            <div class="post-desc">
+                                <p>
+                                    This morning my son was building a tall LEGO tower in the living room.
+                                    He accidentally bumped the tower, and hundreds of LEGOs came crashing to the floor. 
+                                    He started to cry. I ran in the room asking Oh no, what happened? "Dad I knocked all the LEGOs down, I failed." I said, "That's okay pal. 
+                                    Dad's going to use this as a motivational post on Linkedin about failure." My son, with tears in his eyes said, "What? Huh? Whhh What's Linkedin? 
+                                    I'm little and sad." I said, "I know bud, but dad needs more professional karma for this. People always tell sad, made up stories about their kids and use it for likes on Linkedin and I'm going to do the same." 
+                                    My son said, "I don't know what you're talking about dad. Will you help me re-build my LEGO tower?" I said, "Not now little man. 
+                                    Dad's writing a Linkedin post and trying to think of some solid hashtags that will keep the economy moving and motivate tens of people."
+                                     #nevergiveup #motivation #fakecryingkids #voucandoit #sometimesyoucantactuallydoit #legoseverywhere
+                                </p>
+                            </div>
+                            <div class="post-content row align-items-center">
+                                <a class="row align-items-center" href="#">
+                                    <img src="./linkedin-clone-main/assets/images/post_3_img.jpeg" alt="">
+                                </a>
+                            </div>
+                            <div class="post-details row align-items-center justify-space-between">
+                                <div class="post-reactions row align-items-center justify-space-between">
+                                    <a href="#">
+                                        <img src="./linkedin-clone-main/assets/images/post-reactions_1.svg" alt="">
+                                        <img class="move-image-left" src="./linkedin-clone-main/assets/images/post-reactions_2.svg" alt="">
+                                        <img class="move-image-left" src="./linkedin-clone-main/assets/images/post-reactions_3.svg" alt="">
+                                    </a>
+                                    <span>234</span>
+                                </div>
+                                <div class="post-comments">
+                                    <a href="#">
+                                        78 comments · 
+                                    </a>
+                                    <a href="#">
+                                        23 shares
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="post-actions row justify-space-around align-items-center">
+                                <div class="list-post-option">
+                                    <a href="#">
+                                        <i class="fa-regular fa-thumbs-up"></i>
+                                        <span>Like</span>
+                                    </a>
+                                </div>
+                                <div class="list-post-option">
+                                    <a href="#">
+                                        <i class="fa-regular fa-comment-dots"></i>
+                                        <span>Comment</span>
+                                    </a>
+                                </div>
+                                <div class="list-post-option">
+                                    <a href="#">
+                                        <i class="fa-regular fa-share-from-square"></i>
+                                        <span>Share</span>
+                                    </a>
+                                </div>
+                                <div class="list-post-option">
+                                    <a href="#">
+                                        <i class="fa-solid fa-paper-plane"></i>
+                                        <span>Send</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="post">
+                            <header class="post-header row justify-space-between">
+                                <div class="post-by">
+                                    <a class="post-by-id row align-items-center" href="#">
+                                        <div class="post-by-logo">
+                                            <img src="./linkedin-clone-main/assets/images/post_2_logo.jpeg"  alt="">
+                                        </div>
+                                        <div class="post-by-about">
+                                            <span class="post-by-about-name">
+                                                <span class="name">Roger Skaer •</span>
+                                                <span class="name-conn">1st</span>
+                                            </span>
+                                            <span class="post-by-about-desc">
+                                                Experienced fuck-arounder and finder-outer
+                                            </span>
+                                            <span class="post-by-about-info">
+                                                2h •
+                                                <i class="fa-solid fa-earth-americas"></i>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="post-options">
+                                    <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+                                </div>
+                            </header>
+                            <div class="post-desc">
+                                <p>
+                                    So proud to have presented my TED Talk on the constructivist epistemological impetus that underlies the structure of knowledge acquisition thereafter!
+                                    In the pre-conceptual space of information development, we all fear the negative potenitality implicit to the act of curiosity, yet, if we never fuck around, will we ever find out?<br>
+                                    As French postmodern neomarxist Michel Foucault once wrote: <em>I dream of a new age of curiosity. We have the technical means for it; the desire is there; the things to be known are infinite; the people who can employ themselves at this task exist. Why do we suffer? From too little: from channels that are too narrow, skimpy, quasi-monopolistic, insufficient. There is no point in adopting a protectionist attitude, to prevent "bad" information from invading and suffocating the “good.” Rather, we must multiply the paths and the possibilities of coming and goings.</em>
+                                </p>
+                            </div>
+                            <div class="post-content row align-items-center">
+                                <a class="row align-items-center" href="#">
+                                    <a href="https://linktr.ee/rogerskaer"><img src="./linkedin-clone-main/assets/images/post_2_img.jpeg" alt=""></a>
+                                </a>
+                            </div>
+                            <div class="post-details row align-items-center justify-space-between">
+                                <div class="post-reactions row align-items-center justify-space-between">
+                                    <a href="#">
+                                        <img src="./linkedin-clone-main/assets/images/post-reactions_1.svg" alt="">
+                                        <img class="move-image-left" src="./linkedin-clone-main/assets/images/post-reactions_2.svg" alt="">
+                                        <img class="move-image-left" src="./linkedin-clone-main/assets/images/post-reactions_3.svg" alt="">
+                                    </a>
+                                    <span>420</span>
+                                </div>
+                                <div class="post-comments">
+                                    <a href="#">
+                                        9001 comments •
+                                    </a>
+                                    <a href="#">
+                                        69 shares
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="post-actions row justify-space-around align-items-center">
+                                <div class="list-post-option">
+                                    <a href="#">
+                                        <i class="fa-regular fa-thumbs-up"></i>
+                                        <span>Like</span>
+                                    </a>
+                                </div>
+                                <div class="list-post-option">
+                                    <a href="#">
+                                        <i class="fa-regular fa-comment-dots"></i>
+                                        <span>Comment</span>
+                                    </a>
+                                </div>
+                                <div class="list-post-option">
+                                    <a href="#">
+                                        <i class="fa-regular fa-share-from-square"></i>
+                                        <span>Share</span>
+                                    </a>
+                                </div>
+                                <div class="list-post-option">
+                                    <a href="#">
+                                        <i class="fa-solid fa-paper-plane"></i>
+                                        <span>Send</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>  
+
+                        
+                    </main>
+
+                    <aside id="sidebar_2">
+                        <div class="news">
+                            <div class="news-header row justify-space-between align-items-center">
+                                <div><span>News</span></div>
+                                <div><a href="#"><i class="fa-solid fa-circle-info"></i></a></div>
+                            </div>
+                            <ul class="news-items">
+                                <a href="#">
+                                    <li class="row news-item">
+                                        <div class="news-bullet">
+                                            <i class="fa-solid fa-circle-dot"></i>
+                                        </div>
+                                        <div class="news-col">
+                                            <div class="news-title">
+                                                <span>Read five great tips on office management from veteran Michael Scott</span>
+                                            </div>
+                                            <div class="news-desc">
+                                                <span>2d ago •</span>
+                                                <span>7,714 reads</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </a>
+
+                                <a href="#">
+                                    <li class="row news-item">
+                                        <div class="news-bullet">
+                                            <i class="fa-solid fa-circle-dot"></i>
+                                        </div>
+                                        <div class="news-col">
+                                            <div class="news-title">
+                                                <span>Musk buys Rust; deprecates immediately</span>
+                                            </div>
+                                            <div class="news-desc">
+                                                <span>3d ago •</span>
+                                                <span>47,717 reads</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </a>
+
+                                <a href="#">
+                                    <li class="row news-item">
+                                        <div class="news-bullet">
+                                            <i class="fa-solid fa-circle-dot"></i>
+                                        </div>
+                                        <div class="news-col">
+                                            <div class="news-title">
+                                                <span>Coastal workers enjoy fresh lobster as oceans boil</span>
+                                            </div>
+                                            <div class="news-desc">
+                                                <span>2d ago •</span>
+                                                <span>14,982 reads</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </a>
+
+                                <a href="#">
+                                    <li class="row news-item">
+                                        <div class="news-bullet">
+                                            <i class="fa-solid fa-circle-dot"></i>
+                                        </div>
+                                        <div class="news-col">
+                                            <div class="news-title">
+                                                <span>NaN</span>
+                                            </div>
+                                            <div class="news-desc">
+                                                <span>3d ago •</span>
+                                                <span>967 reads</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </a>
+
+                                <a href="#">
+                                    <li class="row news-item">
+                                        <div class="news-bullet">
+                                            <i class="fa-solid fa-circle-dot"></i>
+                                        </div>
+                                        <div class="news-col">
+                                            <div class="news-title">
+                                                <span>Please come back to the office</span>
+                                            </div>
+                                            <div class="news-desc">
+                                                <span>3d ago •</span>
+                                                <span>5,962 reads</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </a>
+                            </ul>
+                            <button class="news-expand">
+                                <span>Show more <i class="fa-solid fa-chevron-down"></i></span>
+                            </button>
+                        </div>
+                        <div class="ad">
+                            <img class="w-100" src="./linkedin-clone-main/assets/images/ad.png" alt="">
+                        </div>
+                        <div class="sidebar-2-footer">
+                            <p style="text-align:center; font-size:13px;"><br>Space insertion code & implementation by Callum Beaney<br><br>
+                            This "Linkedin Clone" HTML/CSS by Anagh Sharma, used under MIT License</p>
+
+                            <!-- <div class="row-options row justify-space-center">
+                                <div>About</div>
+                                <div>Accessibility</div>
+                                <div>Help Centre</div>
+                            </div>
+                            <div class="row-options row justify-space-center">
+                                <div>Privacy and terms <i class="fa-solid fa-chevron-down"></i></div>
+                                <div>Ad Choices</div>
+                            </div>
+                            <div class="row-options row justify-space-center">
+                                <div>Advertising</div>
+                                <div>Business <i class="fa-solid fa-chevron-down"></i></div>
+                            </div>
+                            <div class="row-options row justify-space-center">
+                                <div>Get the LinkedIn app</div>
+                                <div>More</div> -->
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+<script src="./findAndReplaceDOMText.js"></script>
+<script src="./Linkedinify.js"></script>
+
+</body>
+</html>

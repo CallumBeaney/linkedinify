@@ -13,8 +13,12 @@ function makeDeeper({text}) {
 function Linkedinify() 
 {   
     findAndReplaceDOMText(document.body, {
+        find: "...",
+        replace: "…",
+    });
+
+    findAndReplaceDOMText(document.body, {
         find: reggie,
         replace: makeDeeper,
-        preset: 'prose'
     });
 }
