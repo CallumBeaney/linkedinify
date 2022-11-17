@@ -23,12 +23,15 @@ function makeDeeper({text}) {
 
 !function(){
     "use strict";var e="undefined"!=typeof globalThis?globalThis:"undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{};
-    // function Linkedinify() 
-    // {   
+ 
+        findAndReplaceDOMText(document.body, {
+            find: "...",
+            replace: "…",
+        });
         findAndReplaceDOMText(document.body, {
             find: reggie,
             replace: makeDeeper,
             preset: 'prose'
         });
-    // }
+        
     }();
