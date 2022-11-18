@@ -1,7 +1,7 @@
 // import findAndReplaceDOMText from 'findandreplacedomtext';
 // https://github.com/padolsey/findAndReplaceDOMText
 
-const reggie = new RegExp(/\!|\.|\?/, 'g');
+const reggie = new RegExp(/\![^\"]|\.[^\"]|\?[^\"]/, 'g');
 
 function makeDeeper({text}) {
     const abbr = document.createElement('abbr');
